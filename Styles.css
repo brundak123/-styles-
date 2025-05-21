@@ -1,0 +1,110 @@
+@import url("https://fonts.cdnfonts.com/css/angkola");
+@import url("https://fonts.cdnfonts.com/css/tango");
+body {
+  background: #f516df;
+  background: linear-gradient(
+    90deg,
+    rgba(245, 22, 223, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 209, 83, 1) 97%
+  );
+  color: darkblue;
+  font-family: "Angkola", sans-serif;
+  font-size: large;
+}
+
+form {
+  width: 80%;
+}
+
+legend {
+  font-family: "Tango Chips", sans-serif;
+  font-family: "Tango Regular", sans-serif;
+}
+
+fieldset {
+  border: 7px double #008080;
+  border-radius: 20px;
+}
+
+input:required {
+  border: 2px solid rgb(206, 5, 5);
+  border-radius: 30px;
+}
+
+input:optional {
+  border: 2px solid rgb(252, 223, 4);
+}
+
+input:read-only {
+  border-color: #004526;
+  background-color: rgb(135, 218, 176);
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: yellow;
+}
+
+input[type="submit"] {
+  border: 5px solid #200969;
+  border-radius: 15px;
+}
+
+select {
+  background-color: rgb(235, 136, 100);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: aqua;
+}
+
+input[type="text"] + span {
+  display: none;
+}
+
+input[type="text"]:hover + span {
+  display: inline;
+}
+
+input[type="tel"] + span {
+  display: none;
+}
+
+input[type="tel"]:hover + span {
+  display: inline;
+}
+
+input[type="password"] + span {
+  display: none;
+}
+
+input[type="password"]:hover + span {
+  display: inline;
+}
+
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 30px;
+  width: 30px;
+}
+
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 30px;
+  width: 30px;
+}
